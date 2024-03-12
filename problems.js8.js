@@ -1,7 +1,3 @@
-
-
-
-
 function sum(number) {
     if(number===0)
    { 
