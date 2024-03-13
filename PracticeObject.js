@@ -278,7 +278,7 @@ if(word!=="")
         else
         object[word]=1
         }
-        console.log(object)
+       return object
 }
 function convertObjectToList(object)
 {
@@ -303,7 +303,7 @@ for (let i = 0; i < array.length; i++) {
         if(!objResult.hasOwnProperty(array[i]))
         objResult[array[i]]=object[array[i]]
     }
-    
+
 }
 return objResult
 }
