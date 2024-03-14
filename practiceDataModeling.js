@@ -144,15 +144,14 @@ function displayItems(ArrayItems) {
          result=result+ArrayItems[i][key]
       }
           result=result+"\n"
-     }
+  
+        }
     return result
  }
-
 function searchItems( query, items,keys)
 {
     for (let i = 0; i < items.length; i++) {
       if(items[i].keys===query)
-      return items[i]
-        
+      return items[i] 
     }
 } 
