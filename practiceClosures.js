@@ -8,7 +8,7 @@ function makeAccount(initial) {
         }
    return 'Insufficient funds.';
    };
-  
+ 
 }
 var count=0
 function counter()
