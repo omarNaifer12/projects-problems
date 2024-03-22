@@ -12,12 +12,10 @@ function map(array,f)
     })
     return acc
 }
-
-
  function ages(people) { 
        return map(people, function(person) { 
              return person.age;});
- }
+}
  function firstNames(people) { 
     return map(people,function(person) { 
           return person.name.first});
@@ -27,7 +25,6 @@ function lastNames(people) {
     return map(people,function(person) { 
           return person.name.last});
 }
-
 function fullNames(people) { 
     return map(people,function(person) { 
         if(person.name.middle===undefined)
@@ -36,26 +33,19 @@ function fullNames(people) {
         return person.name.first+" "+person.name.middle+" "+person.name.last
 
     });
-  
-
 }
-
-
-
  function abs(x) { 
        if (x >= 0) { 
              return x; 
        }
        return -x;
 }         
-
 function  absolutevalue(array)
 {
     return map(array,function(element,index){
        return abs(element)
     })
 }
-
  function max(numbers) { 
     var max=numbers[0]
       for (let i = 1; i < array.length; i++) {
@@ -77,20 +67,18 @@ function  absolutevalue(array)
     })
 return max    
 }
-
  function maximums(arrays) { 
        return map(arrays,function(array,index){
        return max(array)
        })
- } 
+} 
 
   function exponentials(numbers) { 
       return map(numbers,function(number,index)
       {
-        return Math.pow(number,index+1)
+           return Math.pow(number,index+1)
       })
- } 
-
+} 
 function reverse(string)
 {
     var arrString=string.split("")
@@ -101,22 +89,20 @@ function reverse(string)
     }
 string =arrCopy.join("")
 return string
-} 
+}
 function reverseWords(strings)
 {
     var arrStrings=strings.split(" ")
     var convertToString=  map(arrStrings,function(element,index){
-        return reverse(element)
-    })
-    strings=convertToString.join(" ")
-
+    return reverse(element)
+})
+strings=convertToString.join(" ")
 return strings
 }
-
 function Trypluck(people, key)
 {
-    if(key.tolower()==='age')
-    return ages(people)
+if(key.tolower()==='age')
+return ages(people)
 else if(key.tolower()==='firstname')
 return firstNames(people)
 else if(key.tolower()==='lastname')
@@ -128,7 +114,6 @@ function pluck(people,key)
 {
     return Trypluck(people,key)
 }
-
 function each2(arr1,arr2,f)
 {
     for (let i = 0; i < arr1.length; i++) {
@@ -144,5 +129,3 @@ function map2(arr1,arr2,f)
     })
     return result
 }
-
-
