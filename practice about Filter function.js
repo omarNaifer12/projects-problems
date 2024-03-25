@@ -99,7 +99,6 @@ else
 return filterObject(arg,f)
 }
 
-
  function moveZero(numbers){ 
       const arrWithoutZero=filter(numbers,function(number,index){
         return number!==0
@@ -107,18 +106,17 @@ return filterObject(arg,f)
       const arrZeros=filter(numbers,function(number){
         return number===0
       })  
-      return arrWithoutZero.concat(arrZeros)
+    return arrWithoutZero.concat(arrZeros)
 } 
-
  function strongPasswords(array){ 
      return filter(array,function(obj,index){
         const capitalLetterRegex = /[A-Z]/;
         const smallLetterRegex = /[a-z]/;
         const numberRegex = /[0-9]/;
         const symbolRegex = /[!@#$%^&*()_+{}[\]|\\:;"'<>,.?/~]/;
-   
+   string 
         return capitalLetterRegex.test( obj.user.password
-            ) &&
+                ) &&
                smallLetterRegex.test( obj.user.password
                 ) &&
                numberRegex.test( obj.user.password
@@ -126,4 +124,5 @@ return filterObject(arg,f)
                symbolRegex.test( obj.user.password
                 )&&obj.user.password.length>=8
      })
- } 
+}
+
